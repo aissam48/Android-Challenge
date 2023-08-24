@@ -49,7 +49,7 @@ class MoviesActivity : AppCompatActivity() {
         setUpSearch()
 
         if (isInternetConnected()) {
-            viewModel.fetchMovies("all")
+            viewModel.fetchMovies("comedy")
         } else {
             viewModel.fetchMoviesFromLocalDatabase()
         }
@@ -62,7 +62,7 @@ class MoviesActivity : AppCompatActivity() {
                 listOfMovies.clear()
                 viewModel.page = 1
                 if (text.toString().isEmpty()) {
-                    viewModel.fetchMovies("all")
+                    viewModel.fetchMovies("comedy")
                 } else {
                     viewModel.fetchMovies(text.toString())
                 }
@@ -83,7 +83,7 @@ class MoviesActivity : AppCompatActivity() {
                         viewModel.page = viewModel.page + 1
                         val searchInput = binding.etSearch.text.toString()
                         if (searchInput.isEmpty()) {
-                            viewModel.fetchMovies("all")
+                            viewModel.fetchMovies("comedy")
                         } else {
                             viewModel.fetchMovies(searchInput)
                         }
