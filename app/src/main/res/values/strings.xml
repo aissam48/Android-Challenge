@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MoviesByMovieDB</string>
+    <string name="error_message_at_server">Technical error</string>
+    <string name="button_alphabetical">Alphabetical</string>
+    <string name="button_date">Date</string>
+    <string name="text_sort_by">Sort by:</string>
+    <string name="title_overview">Overview</string>
+    <string name="title_favorites">Favorites</string>
+</resources>
